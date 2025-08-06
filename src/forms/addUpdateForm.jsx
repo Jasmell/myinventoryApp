@@ -1,13 +1,23 @@
+// CSS imports
 import './form.css'
-import { Icon } from '@iconify-icon/react';
+
+// React imports
 import { useState, useRef } from 'react';
-import CategorySelect from './CategorySelect';
-import { addingAnItem } from '../services/dbRetrievingData';
+
+//Dependencies imports
+import { Icon } from '@iconify-icon/react';
 import { v4 as uuidv4 } from 'uuid';
-import { currentDate } from '../data/data';
 import { toast } from 'react-toastify';
 
-function AddUpdateForm({ frmStatus, switchFrmStatus }) {
+// My components imports
+import CategorySelect from './CategorySelect';
+
+// My custom imports
+import { addingAnItem } from '../services/dbRetrievingData';
+import { currentDate } from '../data/data';
+
+// COMPONENT
+const AddUpdateForm =({ frmStatus, switchFrmStatus })=> {
   // References
   const frmRef = useRef(0);
   const classesRef = frmRef.current?.classList;
@@ -81,7 +91,11 @@ function AddUpdateForm({ frmStatus, switchFrmStatus }) {
       switchFrmStatus();
   }
 
-  // ==================== Component body ====================
+  // TEST AREA
+  const handleInputFocus =()=>{
+    console.log("Focused")
+  }
+  // COMPONENT BODY
   return (
 
     <form onSubmit={ handleSubmit }
@@ -89,7 +103,11 @@ function AddUpdateForm({ frmStatus, switchFrmStatus }) {
       <div className='flex'></div>
       <p className='title'>Add an item</p>
       <label>
-        <input className="input" type="text" name='description' value={input.description} onChange = {handleInputs} placeholder='Description' required />
+        <input className="input" 
+        type="text" name='description' 
+        value={input.description} 
+        onFocus={()=>handleInputFocus}
+        onChange = {handleInputs} placeholder='Description' required />
         <span>Description</span>
       </label>
 

@@ -13,7 +13,7 @@ const SignInForm = () => {
     try {
       const result = await signInWithEmailAndPassword(auth, email, password);
       navigate("/App"); // 🔁 redirect after login
-      console.log("Signed in:", result.user.email);
+      // console.log("Signed in:", result.user.email);
     } catch (error) {
       console.error("Error signing in with email:", error.message);
     }
@@ -22,7 +22,7 @@ const SignInForm = () => {
     try {
       const result = await signInAnonymously(auth);
        navigate("/App"); // 🔁 redirect after login
-      console.log("Signed in anonymously as:", result.user.uid);
+      // console.log("Signed in anonymously as:", result.user.uid);
     } catch (error) {
       console.error("Anonymous sign-in failed:", error.message);
     }
