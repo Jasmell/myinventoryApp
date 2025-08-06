@@ -23,4 +23,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-src/App.jsxsrc/components/authComponents/sighInIn.jsx
+src/App.jsx
+src/components/authComponents/sighInIn.jsx
