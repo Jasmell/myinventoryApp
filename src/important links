@@ -1,0 +1,58 @@
+
+<!-- Cards -->
+TTL: Card component to represent the prices and totals
+Link: https://uiverse.io/Yaya12085/tiny-emu-37
+
+<!-- Components descriptions template -->
+    {/* Create a component 📝 */}
+    {/* COMPONENT: [] */}
+    {/* DESCRIPTION: [] */}   
+    {/* PROPS: [] */}
+    {/* CREATED: [//] */}
+
+<!-- Formulary -->
+
+TTL: Add Item
+Link: https://uiverse.io/ammarsaa/chatty-firefox-25
+
+
+<!-- Functions -->
+- All the functions if possible, should be in the functions file.
+- If they can ve categoryzed they'll be divided in function-category file and exported, then used in the required file (componet)
+
+<!-- Components (Reusability first) -->
+- I should have only few type of buttons that can cover the  whole necesity.
+
+<!-- Buttons --> 
+- I need the abstraction to create the buttons and see which are the needed properties so I just pass the properties and make them ready to work. 
+
+<!-- Dependencies -->
+Notifications:Toastify
+Icons: Iconify
+Cahrt.js https://www.chartjs.org/docs/latest/
+Installation Manual: npm install chart.js
+
+I'll use this type of library instead, because it works better with
+react components.
+react-charts-2.js: https://react-chartjs-2.js.org/
+installation: npm install --save chart.js react-chartjs-2
+import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+<Doughnut data={...} /> import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
+import { Doughnut } from "react-chartjs-2";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+<Doughnut data={...} />
+
+
+// CSS imports
+// React imports
+//Dependencies imports
+// My components imports
+
+// Url from where I got the styled-components :https://uiverse.io/andrew-demchenk0/mighty-moose-66
+// Date: 6/17/2025

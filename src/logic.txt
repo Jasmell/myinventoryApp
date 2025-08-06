@@ -1,0 +1,11 @@
+    // 1 -  get the content from the references of the elements 
+    // 2 - setTheState with the data from the references
+    // 3 - set the contentEditable to false
+    // 4 - set the button to edit again with its icon
+    // 5 - send the data to the database as an update
+    // NOTA: I need to figure out how to get the confirmation from the db to be sure that the data was updated successfully.
+    // 7 - send a message to the user that the item was updated successfully
+    // ==Update the item on the db==
+    // updatingAnItem(itemId)
+
+    

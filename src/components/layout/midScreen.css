@@ -1,0 +1,13 @@
+/* Medium devices (landscape phones/tablets - ≥ 576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .layout-main {
+    padding: 1.5rem;
+    font-size: 15px;
+    background-color: yellow;
+  }
+}
+
+
+/* FRM */
+
+/* Items */

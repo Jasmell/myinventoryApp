@@ -1,0 +1,9 @@
+.searchBar{
+  background-color: var(--icon_cl);
+  display: flex;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}

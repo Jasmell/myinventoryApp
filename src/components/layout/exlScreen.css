@@ -1,0 +1,108 @@
+/* Extra large devices (laptops/desktops - ≥ 992px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .layout-main {
+    display: flex; 
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 600px;
+    padding: 2.5rem;
+    font-size: 17px;
+  }
+  /* Thhese are the styles config for the controls container: ; */
+  .row-controls{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  .items-filter{}
+  .row-ItemsView{
+    /* background-color: #202020; */
+    width: 100%;
+    color: white;
+    /* background-color: #20202056; */
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  
+  }
+  /* Inventory view */
+  .Inventory-View{
+    width: 800px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 16px;
+    background-color: aqua;
+    overflow-y: auto;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+  /* Items */
+  .inventory-Item{
+    width: 350px;
+    height: max-content;
+    background-color: #e5e5e5;
+    padding: 16px;
+    color: black;
+    display: flex;
+    flex-flow: column;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .item-top{
+    display: flex;
+    justify-content: space-between;
+  }
+  .item-desc{
+    width: 200px;
+    max-width: 200px;
+    height: 3.2rem;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    white-space: nowrap;         /* Prevent line breaks */
+  overflow: hidden;            /* Hide overflowed content */
+  text-overflow: ellipsis;     /* Show "..." */
+  }
+  .item-price{
+    width: 200px;
+    font-size: 2rem;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+  }
+
+  /* Center data item */
+  .item-center{
+    display: flex;
+    gap: 2.5rem;
+  }
+
+  /* Item BTNS */
+  .btn-container{
+    display: flex;
+    gap: 2.5rem;
+  }
+  .btn-item{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center; 
+    gap: 4px;
+    justify-content: center;
+  }
+} /* It ends here */

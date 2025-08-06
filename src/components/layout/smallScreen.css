@@ -1,0 +1,10 @@
+/* Small devices (phones, portrait - up to 576px) */
+@media (max-width: 575.98px) {
+
+  /* This component handles how the components are shown */
+    .layout-main {
+      padding: 1rem;
+      font-size: 14px;
+      background-color: rgb(46, 226, 43);
+    }
+  }
