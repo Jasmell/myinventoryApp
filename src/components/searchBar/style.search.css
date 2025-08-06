@@ -1,9 +1,51 @@
 .searchBar{
   background-color: var(--icon_cl);
+  width: 200px;
+  height: 30px;
   display: flex;
+  gap: 10px;
+  padding-left: 10px;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
+  transition: var(--anm-dr);
+  -webkit-transition: var(--anm-dr);
+  -moz-transition: var(--anm-dr);
+  -ms-transition: var(--anm-dr);
+  -o-transition: var(--anm-dr);
+}
+.search-icon{
+  height: 20px;
+  aspect-ratio: 1;
+  color: white;
+  cursor: pointer;
+  transition: var(--anm-dr);
+  -webkit-transition: var(--anm-dr);
+  -moz-transition: var(--anm-dr);
+  -ms-transition: var(--anm-dr);
+  -o-transition: var(--anm-dr);
+}
+.searchBar .search-icon:hover{
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+}
+.searchBar > input{
+  height: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  color: var(--icon_cl);
+  border: none;
+  border-radius:  0px 16px 16px 0px;
+  -webkit-border-radius:  0px 16px 16px 0px;
+  -moz-border-radius:  0px 16px 16px 0px;
+  -ms-border-radius:  0px 16px 16px 0px;
+  -o-border-radius:  0px 16px 16px 0px;
+}
+.searchBar > input:focus{
+  box-shadow: 0cap 0px 30px 1px var(--icon_cl);
+
 }

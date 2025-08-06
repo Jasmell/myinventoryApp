@@ -9,7 +9,7 @@ import { Icon } from '@iconify-icon/react';
 const SearchBar = () => {
   return ( 
   <div className="searchBar">
-    <Icon icon="oui:app-search-profiler" width="32" height="32" className=''/>
+    <Icon icon="oui:app-search-profiler" className='search-icon'/>
     <input type="text" />
   </div> );
 }

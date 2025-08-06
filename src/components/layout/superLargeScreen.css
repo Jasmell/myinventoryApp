@@ -148,9 +148,9 @@
     grid-column: 1 / -1;
     display: flex;
     /* Because they are 3 elements and it'll give a equally gap between */
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
     background-color: #303030;
     border-radius: 16px;
     -webkit-border-radius: 16px;
@@ -164,7 +164,7 @@
     width: 150px;
     height: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
     gap: 10px ;
   }
